@@ -156,7 +156,7 @@ export class NodeEditor extends Context<EventsTypes> {
                 
                 Object.keys(jsonNode.outputs).forEach(key => {
                     const outputJson = jsonNode.outputs[key];
-
+                    console.log("outputJson",outputJson)
                     outputJson.connections.forEach(jsonConnection => {
                         const nodeId = jsonConnection.node;
                         const data = jsonConnection.data;
